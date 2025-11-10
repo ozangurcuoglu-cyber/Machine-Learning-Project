@@ -1,3 +1,22 @@
+# Machine Learning Homeworks
+
+This repository contains my university machine learning assignments.
+
+## Contents
+- **PNN Models Assignment** — Implementation and comparison of Probabilistic Neural Network architectures.
+- **Predicting Road Accidents (Kaggle Competition)** — End-to-end data pipeline, feature engineering, and model training for road accident prediction.
+
+---
+
+**Author:** Ozan Gürcüoğlu  
+**Environment:** Python, Jupyter Notebook, scikit-learn, NumPy, pandas
+
+
+
+
+
+
+
 # Predicting Road Accidents (Kaggle Competition) --> **ML_HW_3.ipynb**
 
 A Kaggle competition project focused on predicting the likelihood of road accidents based on environmental and traffic-related data.
