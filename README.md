@@ -30,7 +30,7 @@ A Kaggle competition project focused on predicting the likelihood of road accide
 
 
 
-# PNN Models Assignment-- --> **2022205111-dev-5.ipynb**
+# PNN Models Assignment-- --> **HW_5.ipynb**
 
 This notebook explores Probabilistic Neural Networks (PNN) and compares their performance with other supervised learning models.
 
