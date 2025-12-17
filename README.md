@@ -73,45 +73,43 @@ By completing this notebook, you will:
 
 
 
-# 🩺 Diabetes Prediction Project
+# 🩺 Diabetes Diagnosis Prediction (Kaggle S5E12)
 
-Bu proje, hastaların tıbbi ölçümlerini kullanarak diyabet riskini tahmin etmek amacıyla geliştirilmiş bir **Makine Öğrenmesi** çalışmasıdır. Veri setindeki çeşitli sağlık parametreleri analiz edilerek, bir kişinin diyabet hastası olup olmadığı yüksek doğruluk oranıyla öngörülmeye çalışılmıştır.
+This project focuses on predicting diabetes diagnosis using a large-scale dataset from the **Kaggle Playground Series (Season 5, Episode 12)**. The goal is to build a classification model that accurately identifies whether a patient has diabetes based on various health indicators, lifestyle habits, and clinical measurements.
 
-## 🚀 Proje Özeti
-Diyabet, dünya genelinde milyonlarca insanı etkileyen kronik bir hastalıktır. Erken teşhis, hastalığın yönetimi için kritiktir. Bu proje; veri temizleme, özellik mühendisliği (feature engineering) ve sınıflandırma algoritmalarını kullanarak sağlık verilerinden anlamlı sonuçlar çıkarmayı hedefler.
+## 📊 Dataset Overview
+The dataset contains **700,000 patient records** with 26 distinct features, providing a rich ground for deep statistical analysis and machine learning.
 
+**Key Features include:**
+* **Clinical Data:** BMI, Blood Pressure (Systolic/Diastolic), Cholesterol Levels (HDL/LDL), Triglycerides, Heart Rate.
+* **Lifestyle Habits:** Alcohol consumption, physical activity, diet score, sleep hours, screen time, and smoking status.
+* **Demographics:** Age, Gender, Ethnicity, Education, and Income levels.
+* **Medical History:** Family history of diabetes, hypertension, and cardiovascular history.
+* **Target:** `diagnosed_diabetes` (Classification)
 
+## 🔍 Exploratory Data Analysis (EDA)
+In the notebook, I conducted thorough data profiling:
+* **Target Distribution:** Visualized the balance of the `diagnosed_diabetes` target variable using Seaborn countplots.
+* **Correlation Profiling:** Generated a high-resolution **Correlation Heatmap** to identify the strongest predictors of diabetes and understand the relationships between clinical variables (e.g., BMI vs. Blood Pressure).
+* **Statistical Analysis:** Descriptive statistics (`df.describe()`) to understand outliers and feature scaling requirements.
 
-## 🛠️ Kullanılan Teknolojiler & Kütüphaneler
-* **Dil:** Python 3.x
-* **Veri Analizi:** Pandas, NumPy
-* **Görselleştirme:** Matplotlib, Seaborn
-* **Makine Öğrenmesi:** Scikit-learn (Logistic Regression, Random Forest, SVM vb.)
-* **Model Kaydetme:** Pickle / Joblib
+## 🛠️ Tech Stack
+* **Language:** Python 3.11
+* **Data Processing:** Pandas, NumPy
+* **Visualization:** Matplotlib, Seaborn
+* **Environment:** Kaggle Notebooks (GPU Enabled - Tesla T4)
 
-## 📊 Veri Seti Hakkında
-Projede (örneğin: Pima Indians Diabetes Dataset) kullanılmıştır. Temel özellikler şunlardır:
-* **Pregnancies:** Gebelik sayısı
-* **Glucose:** Glikoz değeri
-* **Blood Pressure:** Kan basıncı
-* **BMI:** Vücut kitle indeksi
-* **Age:** Yaş
-* **Outcome:** Diyabet durumu (0: Negatif, 1: Pozitif)
+## 🚀 Project Workflow
+1. **Data Loading:** Efficiently handling 700k rows using Pandas.
+2. **Preprocessing:** Analyzing feature types (int64, float64, object) and checking for missing values.
+3. **Statistical Summary:** Understanding the distribution of clinical metrics.
+4. **Feature Analysis:** Evaluating correlations to filter significant features for the model.
 
-## 🏗️ İş Akışı (Workflow)
-1. **Veri Ön İşleme:** Eksik değerlerin (0 olan mantıksız veriler) analizi ve doldurulması.
-2. **EDA (Keşifçi Veri Analizi):** Korelasyon matrisleri ve dağılım grafiklerinin incelenmesi.
-3. **Özellik Ölçeklendirme:** StandardScaler veya MinMaxScaler kullanımı.
-4. **Model Eğitimi:** Farklı algoritmaların (Random Forest, XGBoost vb.) karşılaştırılması.
-5. **Değerlendirme:** Confusion Matrix, F1-Score ve Accuracy değerlerinin analizi.
+## 📈 Key Insights
+* The correlation matrix revealed significant patterns between age, weight-related metrics (BMI, Waist-to-Hip ratio), and the likelihood of diagnosis.
+* Lifestyle factors like physical activity and diet scores show measurable impacts on health markers.
 
-## 📈 Sonuçlar
-Modelimiz test verileri üzerinde şu başarı metriklerini elde etmiştir:
-* **Accuracy:** %72.531
-  
-## 💻 Kurulum ve Çalıştırma
-Projeyi yerel bilgisayarınızda çalıştırmak için:
-
-1. Depoyu klonlayın:
+## 💻 How to Run
+1. Clone the repository:
    ```bash
-   git clone [https://github.com/kullaniciadi/diabetes-prediction.git](https://github.com/kullaniciadi/diabetes-prediction.git)
+   git clone [https://github.com/yourusername/diabetes-prediction-kaggle.git](https://github.com/yourusername/diabetes-prediction-kaggle.git)
