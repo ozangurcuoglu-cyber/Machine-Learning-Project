@@ -107,10 +107,8 @@ Projede (örneğin: Pima Indians Diabetes Dataset) kullanılmıştır. Temel öz
 
 ## 📈 Sonuçlar
 Modelimiz test verileri üzerinde şu başarı metriklerini elde etmiştir:
-* **Accuracy:** %XX
-* **Precision:** %XX
-* **Recall:** %XX
-
+* **Accuracy:** %72.531
+  
 ## 💻 Kurulum ve Çalıştırma
 Projeyi yerel bilgisayarınızda çalıştırmak için:
 
